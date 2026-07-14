@@ -28,15 +28,15 @@ A web-based attendance information system developed using **PHP, CodeIgniter 4, 
 
 ### Home
 
-![](screenshots/home.jpg)
+![](screenshots/home.jpeg)
 
 ### Attendance
 
-![](screenshots/attendance.jpg)
+![](screenshots/attendance.jpeg)
 
 ### Report
 
-![](screenshots/report.jpg)
+![](screenshots/report.png)
 
 ---
 
