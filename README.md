@@ -13,7 +13,7 @@ A web-based attendance information system developed using **PHP, CodeIgniter 4, 
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - PHP
 - CodeIgniter 4
