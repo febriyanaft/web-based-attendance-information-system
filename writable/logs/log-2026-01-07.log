@@ -1,0 +1,15 @@
+ERROR - 2026-01-07 07:19:14 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_uas_klp4`.`karyawan`, CONSTRAINT `fk_karyawan_jabatan` FOREIGN KEY (`id_jabatan`) REFERENCES `jabatan` (`id_jabatan`) ON UPDATE CASCADE) in C:\xampp\htdocs\PW\budiluhur\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\PW\budiluhur\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `ka...', 0)
+#1 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ka...')
+#2 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ka...')
+#3 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ka...', Array, false)
+#4 C:\xampp\htdocs\PW\budiluhur\app\Models\KaryawanModel.php(32): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\PW\budiluhur\app\Controllers\Karyawan.php(29): App\Models\KaryawanModel->saveKaryawan(Array)
+#6 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(933): App\Controllers\Karyawan->add()
+#7 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+#8 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\PW\budiluhur\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\PW\budiluhur\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\PW\budiluhur\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}

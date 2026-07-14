@@ -1,0 +1,146 @@
+CRITICAL - 2025-12-24 02:54:26 --> Error: Call to a member function where() on null
+[Method: GET, Route: absensi/edit/A001]
+in APPPATH\Controllers\Absensi.php on line 123.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Absensi->edit('A001')
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-12-24 02:55:07 --> Error: Call to a member function where() on null
+[Method: GET, Route: absensi/edit/A001]
+in APPPATH\Controllers\Absensi.php on line 123.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Absensi->edit('A001')
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-12-24 03:06:22 --> ErrorException: Undefined property: stdClass::$id_detail_absensi
+[Method: GET, Route: absensi/edit/A001]
+in APPPATH\Views\editAbsensiView.php on line 341.
+ 1 APPPATH\Views\editAbsensiView.php(341): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id_detail_absensi', 'C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\editAbsensiView.php', 341)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\editAbsensiView.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('editAbsensiView', [], true)
+ 5 APPPATH\Controllers\Absensi.php(157): view('editAbsensiView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Absensi->edit('A001')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-12-24 03:06:24 --> ErrorException: Undefined variable $row
+[Method: GET, Route: absensi]
+in APPPATH\Views\absensiView.php on line 57.
+ 1 APPPATH\Views\absensiView.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\absensiView.php', 57)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\absensiView.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('absensiView', [], true)
+ 5 APPPATH\Controllers\Absensi.php(29): view('absensiView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Absensi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-12-24 03:06:36 --> ErrorException: Undefined variable $row
+[Method: GET, Route: absensi]
+in APPPATH\Views\absensiView.php on line 57.
+ 1 APPPATH\Views\absensiView.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\absensiView.php', 57)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\absensiView.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('absensiView', [], true)
+ 5 APPPATH\Controllers\Absensi.php(29): view('absensiView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Absensi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-12-24 03:06:48 --> ErrorException: Undefined variable $row
+[Method: GET, Route: absensi]
+in APPPATH\Views\absensiView.php on line 57.
+ 1 APPPATH\Views\absensiView.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\absensiView.php', 57)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\absensiView.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('absensiView', [], true)
+ 5 APPPATH\Controllers\Absensi.php(29): view('absensiView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Absensi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-12-24 03:07:05 --> ErrorException: Undefined variable $row
+[Method: GET, Route: absensi]
+in APPPATH\Views\absensiView.php on line 57.
+ 1 APPPATH\Views\absensiView.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\absensiView.php', 57)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\absensiView.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('absensiView', [], true)
+ 5 APPPATH\Controllers\Absensi.php(29): view('absensiView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Absensi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-12-24 03:07:26 --> ErrorException: Undefined variable $row
+[Method: GET, Route: absensi]
+in APPPATH\Views\absensiView.php on line 57.
+ 1 APPPATH\Views\absensiView.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\absensiView.php', 57)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\absensiView.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('absensiView', [], true)
+ 5 APPPATH\Controllers\Absensi.php(29): view('absensiView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Absensi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-12-24 03:07:41 --> ErrorException: Undefined variable $row
+[Method: GET, Route: absensi]
+in APPPATH\Views\absensiView.php on line 57.
+ 1 APPPATH\Views\absensiView.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\absensiView.php', 57)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\absensiView.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('absensiView', [], true)
+ 5 APPPATH\Controllers\Absensi.php(29): view('absensiView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Absensi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-12-24 03:10:28 --> ErrorException: Undefined property: App\Controllers\Absensi::$detailModel
+[Method: POST, Route: absensi/tambahDetail/A004]
+in APPPATH\Controllers\Absensi.php on line 73.
+ 1 APPPATH\Controllers\Absensi.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Absensi::$detailModel', 'C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Controllers\\Absensi.php', 73)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Absensi->tambahDetail('A004')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-12-24 03:10:41 --> ErrorException: Undefined property: App\Controllers\Absensi::$detailModel
+[Method: POST, Route: absensi/tambahDetail/A004]
+in APPPATH\Controllers\Absensi.php on line 73.
+ 1 APPPATH\Controllers\Absensi.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Absensi::$detailModel', 'C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Controllers\\Absensi.php', 73)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Absensi->tambahDetail('A004')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-12-24 03:11:10 --> ErrorException: Undefined property: App\Controllers\Absensi::$detailModel
+[Method: POST, Route: absensi/tambahDetail/A004]
+in APPPATH\Controllers\Absensi.php on line 73.
+ 1 APPPATH\Controllers\Absensi.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Absensi::$detailModel', 'C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Controllers\\Absensi.php', 73)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Absensi->tambahDetail('A004')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

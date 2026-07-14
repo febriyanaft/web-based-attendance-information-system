@@ -1,0 +1,60 @@
+ERROR - 2025-12-27 08:07:44 --> mysqli_sql_exception: Unknown column 'da.status' in 'field list' in C:\xampp\htdocs\PW\budiluhur\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\PW\budiluhur\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `da`.`id...', 0)
+#1 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `da`.`id...')
+#2 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `da`.`id...')
+#3 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `da`.`id...', Array, false)
+#4 C:\xampp\htdocs\PW\budiluhur\app\Controllers\LaporanController.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(933): App\Controllers\LaporanController->Lap_Absensi()
+#6 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanController))
+#7 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\PW\budiluhur\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\PW\budiluhur\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\PW\budiluhur\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-12-27 08:07:44 --> Error: Call to a member function getResult() on bool
+[Method: GET, Route: lapabsensi]
+in APPPATH\Controllers\LaporanController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanController->Lap_Absensi()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-12-27 08:18:19 --> ErrorException: Undefined property: stdClass::$tgl_absensi
+[Method: GET, Route: lapabsensi]
+in APPPATH\Views\laporan\Lap_Absensi.php on line 51.
+ 1 APPPATH\Views\laporan\Lap_Absensi.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$tgl_absensi', 'C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\laporan\\Lap_Absensi.php', 51)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\laporan\\Lap_Absensi.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('laporan/lap_absensi', [], true)
+ 5 APPPATH\Controllers\LaporanController.php(54): view('laporan/lap_absensi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanController->Lap_Absensi()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-12-27 08:41:47 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, 2) AS UNSIGNED) ASC' at line 4 in C:\xampp\htdocs\PW\budiluhur\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\PW\budiluhur\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `k`.`id_...', 0)
+#1 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `k`.`id_...')
+#2 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `k`.`id_...')
+#3 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `k`.`id_...', Array, false)
+#4 C:\xampp\htdocs\PW\budiluhur\app\Controllers\LaporanController.php(20): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(933): App\Controllers\LaporanController->Lap_Karyawan()
+#6 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanController))
+#7 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\PW\budiluhur\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\PW\budiluhur\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\PW\budiluhur\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-12-27 08:41:47 --> Error: Call to a member function getResult() on bool
+[Method: GET, Route: lapkaryawan]
+in APPPATH\Controllers\LaporanController.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanController->Lap_Karyawan()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

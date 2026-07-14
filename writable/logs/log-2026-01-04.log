@@ -1,0 +1,381 @@
+ERROR - 2026-01-04 03:07:49 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\PW\budiluhur\system\Database\MySQLi\Connection.php:202
+Stack trace:
+#0 C:\xampp\htdocs\PW\budiluhur\system\Database\MySQLi\Connection.php(202): mysqli->real_connect('localhost', 'root', '', 'db_uas_klp4', 3306, '', 0)
+#1 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `absensi...', Array, false)
+#4 C:\xampp\htdocs\PW\budiluhur\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\PW\budiluhur\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\PW\budiluhur\app\Models\AbsensiModel.php(55): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\PW\budiluhur\app\Controllers\Absensi.php(27): App\Models\AbsensiModel->getAbsensi()
+#8 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(933): App\Controllers\Absensi->index()
+#9 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+#10 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\PW\budiluhur\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\PW\budiluhur\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\PW\budiluhur\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\PW\budiluhur\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `absensi...', Array, false)
+#3 C:\xampp\htdocs\PW\budiluhur\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\PW\budiluhur\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\PW\budiluhur\app\Models\AbsensiModel.php(55): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\PW\budiluhur\app\Controllers\Absensi.php(27): App\Models\AbsensiModel->getAbsensi()
+#7 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(933): App\Controllers\Absensi->index()
+#8 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+#9 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\PW\budiluhur\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\PW\budiluhur\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\PW\budiluhur\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-01-04 03:07:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: absensi]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `absensi`.*, `detail_absensi`.`jam_masuk`, `detail_absensi`.`jam_keluar`, `karyawan`.`nama`, `jabatan`.`nama_jabatan`
+FROM `absensi`
+LEFT JOIN `detail_absensi` ON `detail_absensi`.`id_absensi` = `absensi`.`id_absensi`
+JOIN `karyawan` ON `karyawan`.`id_karyawan` = `absensi`.`id_karyawan`
+JOIN `jabatan` ON `jabatan`.`id_jabatan` = `karyawan`.`id_jabatan`
+ORDER BY `tanggal` DESC', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\AbsensiModel.php(55): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Absensi.php(27): App\Models\AbsensiModel->getAbsensi()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Absensi->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-01-04 03:07:58 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\PW\budiluhur\system\Database\MySQLi\Connection.php:202
+Stack trace:
+#0 C:\xampp\htdocs\PW\budiluhur\system\Database\MySQLi\Connection.php(202): mysqli->real_connect('localhost', 'root', '', 'db_uas_klp4', 3306, '', 0)
+#1 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `k`.`id_...', Array, false)
+#4 C:\xampp\htdocs\PW\budiluhur\app\Models\KaryawanModel.php(26): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\PW\budiluhur\app\Controllers\Karyawan.php(10): App\Models\KaryawanModel->getKaryawanWithJabatan()
+#6 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(933): App\Controllers\Karyawan->index()
+#7 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+#8 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\PW\budiluhur\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\PW\budiluhur\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\PW\budiluhur\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\PW\budiluhur\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `k`.`id_...', Array, false)
+#3 C:\xampp\htdocs\PW\budiluhur\app\Models\KaryawanModel.php(26): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\PW\budiluhur\app\Controllers\Karyawan.php(10): App\Models\KaryawanModel->getKaryawanWithJabatan()
+#5 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(933): App\Controllers\Karyawan->index()
+#6 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+#7 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\PW\budiluhur\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\PW\budiluhur\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\PW\budiluhur\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2026-01-04 03:07:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: karyawan]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `k`.`id_karyawan`, `k`.`nama`, `k`.`no_telp`, `k`.`alamat`, `j`.`nama_jabatan`
+FROM `karyawan` `k`
+LEFT JOIN `jabatan` `j` ON `k`.`id_jabatan` = `j`.`id_jabatan`', [], false)
+ 3 APPPATH\Models\KaryawanModel.php(26): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Karyawan.php(10): App\Models\KaryawanModel->getKaryawanWithJabatan()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Karyawan->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-01-04 05:48:38 --> mysqli_sql_exception: Table 'db_uas_klp4.absensi' doesn't exist in engine in C:\xampp\htdocs\PW\budiluhur\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\PW\budiluhur\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `absensi...', 0)
+#1 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `absensi...')
+#2 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `absensi...')
+#3 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `absensi...', Array, false)
+#4 C:\xampp\htdocs\PW\budiluhur\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\PW\budiluhur\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\PW\budiluhur\app\Models\AbsensiModel.php(55): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\PW\budiluhur\app\Controllers\Absensi.php(27): App\Models\AbsensiModel->getAbsensi()
+#8 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(933): App\Controllers\Absensi->index()
+#9 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+#10 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\PW\budiluhur\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\PW\budiluhur\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\PW\budiluhur\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2026-01-04 05:48:38 --> Error: Call to a member function getResult() on bool
+[Method: GET, Route: absensi]
+in SYSTEMPATH\Model.php on line 287.
+ 1 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH\Models\AbsensiModel.php(55): CodeIgniter\BaseModel->findAll()
+ 3 APPPATH\Controllers\Absensi.php(27): App\Models\AbsensiModel->getAbsensi()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Absensi->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-01-04 05:48:44 --> mysqli_sql_exception: Table 'db_uas_klp4.karyawan' doesn't exist in engine in C:\xampp\htdocs\PW\budiluhur\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\PW\budiluhur\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `k`.`id_...', 0)
+#1 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `k`.`id_...')
+#2 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `k`.`id_...')
+#3 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `k`.`id_...', Array, false)
+#4 C:\xampp\htdocs\PW\budiluhur\app\Models\KaryawanModel.php(26): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\PW\budiluhur\app\Controllers\Karyawan.php(10): App\Models\KaryawanModel->getKaryawanWithJabatan()
+#6 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(933): App\Controllers\Karyawan->index()
+#7 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+#8 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\PW\budiluhur\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\PW\budiluhur\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\PW\budiluhur\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2026-01-04 05:48:44 --> Error: Call to a member function getResultArray() on bool
+[Method: GET, Route: karyawan]
+in APPPATH\Models\KaryawanModel.php on line 27.
+ 1 APPPATH\Controllers\Karyawan.php(10): App\Models\KaryawanModel->getKaryawanWithJabatan()
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Karyawan->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-01-04 05:57:37 --> mysqli_sql_exception: Table 'db_uas_klp4.karyawan' doesn't exist in engine in C:\xampp\htdocs\PW\budiluhur\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\PW\budiluhur\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `k`.`id_...', 0)
+#1 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `k`.`id_...')
+#2 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `k`.`id_...')
+#3 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `k`.`id_...', Array, false)
+#4 C:\xampp\htdocs\PW\budiluhur\app\Models\KaryawanModel.php(26): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\PW\budiluhur\app\Controllers\Karyawan.php(10): App\Models\KaryawanModel->getKaryawanWithJabatan()
+#6 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(933): App\Controllers\Karyawan->index()
+#7 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+#8 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\PW\budiluhur\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\PW\budiluhur\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\PW\budiluhur\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2026-01-04 05:57:37 --> Error: Call to a member function getResultArray() on bool
+[Method: GET, Route: karyawan]
+in APPPATH\Models\KaryawanModel.php on line 27.
+ 1 APPPATH\Controllers\Karyawan.php(10): App\Models\KaryawanModel->getKaryawanWithJabatan()
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Karyawan->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-01-04 05:57:41 --> mysqli_sql_exception: Table 'db_uas_klp4.karyawan' doesn't exist in engine in C:\xampp\htdocs\PW\budiluhur\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\PW\budiluhur\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `k`.`id_...', 0)
+#1 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `k`.`id_...')
+#2 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `k`.`id_...')
+#3 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `k`.`id_...', Array, false)
+#4 C:\xampp\htdocs\PW\budiluhur\app\Models\KaryawanModel.php(26): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\PW\budiluhur\app\Controllers\Karyawan.php(10): App\Models\KaryawanModel->getKaryawanWithJabatan()
+#6 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(933): App\Controllers\Karyawan->index()
+#7 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+#8 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\PW\budiluhur\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\PW\budiluhur\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\PW\budiluhur\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2026-01-04 05:57:41 --> Error: Call to a member function getResultArray() on bool
+[Method: GET, Route: karyawan]
+in APPPATH\Models\KaryawanModel.php on line 27.
+ 1 APPPATH\Controllers\Karyawan.php(10): App\Models\KaryawanModel->getKaryawanWithJabatan()
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Karyawan->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-01-04 05:57:44 --> mysqli_sql_exception: Table 'db_uas_klp4.jabatan' doesn't exist in engine in C:\xampp\htdocs\PW\budiluhur\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\PW\budiluhur\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\PW\budiluhur\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\PW\budiluhur\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\PW\budiluhur\app\Controllers\Jabatan.php(10): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(933): App\Controllers\Jabatan->index()
+#8 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jabatan))
+#9 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\PW\budiluhur\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\PW\budiluhur\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\PW\budiluhur\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-01-04 05:57:44 --> Error: Call to a member function getResult() on bool
+[Method: GET, Route: jabatan]
+in SYSTEMPATH\Model.php on line 287.
+ 1 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH\Controllers\Jabatan.php(10): CodeIgniter\BaseModel->findAll()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Jabatan->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jabatan))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-01-04 09:48:20 --> Error: Class "Locale" not found
+[Method: GET, Route: /]
+in SYSTEMPATH\CodeIgniter.php on line 189.
+ 1 SYSTEMPATH\Boot.php(350): CodeIgniter\CodeIgniter->initialize()
+ 2 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::initializeCodeIgniter()
+ 3 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-01-04 09:48:26 --> Error: Class "Locale" not found
+[Method: GET, Route: /]
+in SYSTEMPATH\CodeIgniter.php on line 189.
+ 1 SYSTEMPATH\Boot.php(350): CodeIgniter\CodeIgniter->initialize()
+ 2 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::initializeCodeIgniter()
+ 3 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-01-04 09:41:51 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'db_uas_klp4' in C:\xampp\htdocs\PW\budiluhur\system\Database\MySQLi\Connection.php:202
+Stack trace:
+#0 C:\xampp\htdocs\PW\budiluhur\system\Database\MySQLi\Connection.php(202): mysqli->real_connect('localhost', 'root', '', 'db_uas_klp4', 3306, '', 0)
+#1 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `k`.`id_...', Array, false)
+#4 C:\xampp\htdocs\PW\budiluhur\app\Models\KaryawanModel.php(26): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\PW\budiluhur\app\Controllers\Karyawan.php(10): App\Models\KaryawanModel->getKaryawanWithJabatan()
+#6 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(933): App\Controllers\Karyawan->index()
+#7 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+#8 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\PW\budiluhur\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\PW\budiluhur\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\PW\budiluhur\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'db_uas_klp4' in C:\xampp\htdocs\PW\budiluhur\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `k`.`id_...', Array, false)
+#3 C:\xampp\htdocs\PW\budiluhur\app\Models\KaryawanModel.php(26): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\PW\budiluhur\app\Controllers\Karyawan.php(10): App\Models\KaryawanModel->getKaryawanWithJabatan()
+#5 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(933): App\Controllers\Karyawan->index()
+#6 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+#7 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\PW\budiluhur\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\PW\budiluhur\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\PW\budiluhur\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2026-01-04 09:41:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'db_uas_klp4'
+[Method: GET, Route: karyawan]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `k`.`id_karyawan`, `k`.`nama`, `k`.`no_telp`, `k`.`alamat`, `j`.`nama_jabatan`
+FROM `karyawan` `k`
+LEFT JOIN `jabatan` `j` ON `k`.`id_jabatan` = `j`.`id_jabatan`', [], false)
+ 3 APPPATH\Models\KaryawanModel.php(26): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Karyawan.php(10): App\Models\KaryawanModel->getKaryawanWithJabatan()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Karyawan->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-01-04 13:57:04 --> ErrorException: Undefined property: CodeIgniter\View\View::$uri
+[Method: GET, Route: home]
+in APPPATH\Views\header.php on line 6.
+ 1 APPPATH\Views\header.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$uri', 'C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\header.php', 6)
+ 2 APPPATH\Views\index.php(41): include('C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\header.php')
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\Home.php(9): view('index')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-01-04 13:57:31 --> ErrorException: Undefined property: CodeIgniter\View\View::$uri
+[Method: GET, Route: home]
+in APPPATH\Views\header.php on line 2.
+ 1 APPPATH\Views\header.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$uri', 'C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\header.php', 2)
+ 2 APPPATH\Views\index.php(41): include('C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\header.php')
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\Home.php(9): view('index')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-01-04 14:01:50 --> Error: Cannot access protected property CodeIgniter\HTTP\IncomingRequest::$uri
+[Method: GET, Route: home]
+in APPPATH\Controllers\Home.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-01-04 23:34:55 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+[Method: GET, Route: karyawan]
+in APPPATH\Views\karyawanView.php on line 85.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('karyawanView', [], true)
+ 4 APPPATH\Controllers\Karyawan.php(11): view('karyawanView', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Karyawan->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-01-04 23:34:55 --> [Caused by] ErrorException: Undefined variable $listKaryawan
+in APPPATH\Views\karyawanView.php on line 85.
+ 1 APPPATH\Views\karyawanView.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $listKaryawan', 'C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\karyawanView.php', 85)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\karyawanView.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('karyawanView', [], true)
+ 5 APPPATH\Controllers\Karyawan.php(11): view('karyawanView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Karyawan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-01-04 23:44:24 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+[Method: GET, Route: absensi]
+in APPPATH\Views\absensiView.php on line 84.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('absensiView', [], true)
+ 4 APPPATH\Controllers\Absensi.php(28): view('absensiView', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Absensi->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-01-04 23:44:24 --> [Caused by] ErrorException: Undefined variable $getAbsensi
+in APPPATH\Views\absensiView.php on line 84.
+ 1 APPPATH\Views\absensiView.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $getAbsensi', 'C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\absensiView.php', 84)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\absensiView.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('absensiView', [], true)
+ 5 APPPATH\Controllers\Absensi.php(28): view('absensiView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Absensi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

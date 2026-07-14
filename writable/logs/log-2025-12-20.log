@@ -1,0 +1,82 @@
+CRITICAL - 2025-12-20 06:01:47 --> ErrorException: Undefined property: stdClass::$tgl_absensi
+[Method: GET, Route: absensi]
+in APPPATH\Views\absensiView.php on line 42.
+ 1 APPPATH\Views\absensiView.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$tgl_absensi', 'C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\absensiView.php', 42)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\absensiView.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('absensiView', [], true)
+ 5 APPPATH\Controllers\Absensi.php(15): view('absensiView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Absensi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-12-20 10:05:55 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_uas_klp4`.`detail_absensi`, CONSTRAINT `fk_detail_absensi_absensi` FOREIGN KEY (`id_absensi`) REFERENCES `absensi` (`id_absensi`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\PW\budiluhur\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\PW\budiluhur\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `de...', 0)
+#1 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `de...')
+#2 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `de...')
+#3 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `de...', Array, false)
+#4 C:\xampp\htdocs\PW\budiluhur\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\PW\budiluhur\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\PW\budiluhur\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\PW\budiluhur\app\Controllers\Absensi.php(51): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(933): App\Controllers\Absensi->tambahDetail('0')
+#9 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+#10 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\PW\budiluhur\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\PW\budiluhur\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\PW\budiluhur\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+ERROR - 2025-12-20 10:06:01 --> mysqli_sql_exception: Duplicate entry '' for key 'PRIMARY' in C:\xampp\htdocs\PW\budiluhur\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\PW\budiluhur\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `ab...', 0)
+#1 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ab...')
+#2 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ab...')
+#3 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ab...', Array, false)
+#4 C:\xampp\htdocs\PW\budiluhur\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\PW\budiluhur\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\PW\budiluhur\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\PW\budiluhur\app\Controllers\Absensi.php(33): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(933): App\Controllers\Absensi->buatAbsensiAjax()
+#9 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+#10 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\PW\budiluhur\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\PW\budiluhur\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\PW\budiluhur\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+ERROR - 2025-12-20 10:06:01 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_uas_klp4`.`detail_absensi`, CONSTRAINT `fk_detail_absensi_absensi` FOREIGN KEY (`id_absensi`) REFERENCES `absensi` (`id_absensi`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\PW\budiluhur\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\PW\budiluhur\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `de...', 0)
+#1 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `de...')
+#2 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `de...')
+#3 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `de...', Array, false)
+#4 C:\xampp\htdocs\PW\budiluhur\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\PW\budiluhur\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\PW\budiluhur\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\PW\budiluhur\app\Controllers\Absensi.php(51): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(933): App\Controllers\Absensi->tambahDetail('false')
+#9 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+#10 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\PW\budiluhur\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\PW\budiluhur\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\PW\budiluhur\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+ERROR - 2025-12-20 10:19:08 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_uas_klp4`.`detail_absensi`, CONSTRAINT `fk_detail_absensi_absensi` FOREIGN KEY (`id_absensi`) REFERENCES `absensi` (`id_absensi`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\PW\budiluhur\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\PW\budiluhur\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `de...', 0)
+#1 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `de...')
+#2 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `de...')
+#3 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `de...', Array, false)
+#4 C:\xampp\htdocs\PW\budiluhur\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\PW\budiluhur\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\PW\budiluhur\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\PW\budiluhur\app\Controllers\Absensi.php(64): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(933): App\Controllers\Absensi->tambahDetail('A1766225948')
+#9 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+#10 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\PW\budiluhur\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\PW\budiluhur\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\PW\budiluhur\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}

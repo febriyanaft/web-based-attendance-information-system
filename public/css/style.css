@@ -1,0 +1,58 @@
+body,html{
+	margin:0px; padding:0px; /*hilangkan margin dan padding */
+	color:#000; /*warna huruf*/
+	background:#2b579a; /*warna background*/
+}
+#container{
+	width:960px; /*lebar container*/
+	margin-left:auto; /*margin kiri otomatis (supaya posisi di tengah)*/
+	margin-right:auto; /*margin kanan otomatis (supaya posisi di tengah)*/
+	margin-top:10px; /*margin atas 10px*/
+	background-color:#fff; /*warna background*/
+}
+#header{
+	padding:10px; /*mengatur padding */
+	background:#ddd; /*warna background*/
+	text-align:center;
+}
+#nav{
+	padding:5px 10px; /*padding atas dan bawah 5px, kiri dan kanan 10px*/
+	background:#c99; /*warna background*/
+	text-align:center; /*posisi text di tengah*/
+}
+#nav ul{
+	margin:0px; padding:0px;  /*hilangkan margin dan padding*/
+	list-style:none; /*hilangkan list-style */
+}
+#nav li{
+	display:inline; /*tampilkan secara inline */
+}
+#main{
+	float:left; /*posisi di kiri*/
+	width:900px; /*lebar*/
+	padding:10px; /*mengatur padding*/
+	min-height:400px; /*tinggi minimal*/
+}
+.judul{
+	color:orange; /*warna huruf*/
+	font-family:verdana; /*font yang digunakan*/
+}
+.berhasil{
+	color:white;
+	background-color:green;
+	display:inline;
+}
+.gagal{
+	color:white;
+	background-color:red;
+	display:inline;
+}
+.judulberita{
+	font-size:25px;
+	color:green;
+}
+#footer{
+	clear:both; /*menghilangkan float*/
+	background:#cc9; /*mengatur warna background*/
+	text-align:center; /*mengatur perataan text*/
+}

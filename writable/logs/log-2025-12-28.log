@@ -1,0 +1,14 @@
+CRITICAL - 2025-12-28 14:47:41 --> ErrorException: Undefined variable $bulan
+[Method: GET, Route: lapabsensi]
+in APPPATH\Views\laporan\Lap_Absensi.php on line 22.
+ 1 APPPATH\Views\laporan\Lap_Absensi.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bulan', 'C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\laporan\\Lap_Absensi.php', 22)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\laporan\\Lap_Absensi.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('laporan/lap_absensi', [], true)
+ 5 APPPATH\Controllers\LaporanController.php(54): view('laporan/lap_absensi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanController->Lap_Absensi()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

@@ -1,0 +1,357 @@
+ERROR - 2025-12-21 11:00:49 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_uas_klp4`.`detail_absensi`, CONSTRAINT `fk_detail_absensi_absensi` FOREIGN KEY (`id_absensi`) REFERENCES `absensi` (`id_absensi`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\PW\budiluhur\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\PW\budiluhur\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `de...', 0)
+#1 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `de...')
+#2 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `de...')
+#3 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `de...', Array, false)
+#4 C:\xampp\htdocs\PW\budiluhur\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\PW\budiluhur\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\PW\budiluhur\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\PW\budiluhur\app\Controllers\Absensi.php(76): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(933): App\Controllers\Absensi->tambahDetail('A004')
+#9 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+#10 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\PW\budiluhur\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\PW\budiluhur\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\PW\budiluhur\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+ERROR - 2025-12-21 11:01:06 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_uas_klp4`.`detail_absensi`, CONSTRAINT `fk_detail_absensi_absensi` FOREIGN KEY (`id_absensi`) REFERENCES `absensi` (`id_absensi`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\PW\budiluhur\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\PW\budiluhur\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `de...', 0)
+#1 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `de...')
+#2 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `de...')
+#3 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `de...', Array, false)
+#4 C:\xampp\htdocs\PW\budiluhur\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\PW\budiluhur\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\PW\budiluhur\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\PW\budiluhur\app\Controllers\Absensi.php(76): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(933): App\Controllers\Absensi->tambahDetail('A004')
+#9 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+#10 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\PW\budiluhur\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\PW\budiluhur\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\PW\budiluhur\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+ERROR - 2025-12-21 11:01:53 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_uas_klp4`.`detail_absensi`, CONSTRAINT `fk_detail_absensi_absensi` FOREIGN KEY (`id_absensi`) REFERENCES `absensi` (`id_absensi`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\PW\budiluhur\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\PW\budiluhur\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `de...', 0)
+#1 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `de...')
+#2 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `de...')
+#3 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `de...', Array, false)
+#4 C:\xampp\htdocs\PW\budiluhur\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\PW\budiluhur\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\PW\budiluhur\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\PW\budiluhur\app\Controllers\Absensi.php(76): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(933): App\Controllers\Absensi->tambahDetail('A004')
+#9 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+#10 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\PW\budiluhur\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\PW\budiluhur\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\PW\budiluhur\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+ERROR - 2025-12-21 11:10:06 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_uas_klp4`.`detail_absensi`, CONSTRAINT `fk_detail_absensi_absensi` FOREIGN KEY (`id_absensi`) REFERENCES `absensi` (`id_absensi`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\PW\budiluhur\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\PW\budiluhur\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `de...', 0)
+#1 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `de...')
+#2 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `de...')
+#3 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `de...', Array, false)
+#4 C:\xampp\htdocs\PW\budiluhur\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\PW\budiluhur\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\PW\budiluhur\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\PW\budiluhur\app\Controllers\Absensi.php(90): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(933): App\Controllers\Absensi->tambahDetail('A004')
+#9 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+#10 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\PW\budiluhur\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\PW\budiluhur\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\PW\budiluhur\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+ERROR - 2025-12-21 11:14:35 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_uas_klp4`.`detail_absensi`, CONSTRAINT `fk_detail_absensi_absensi` FOREIGN KEY (`id_absensi`) REFERENCES `absensi` (`id_absensi`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\PW\budiluhur\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\PW\budiluhur\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `de...', 0)
+#1 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `de...')
+#2 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `de...')
+#3 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `de...', Array, false)
+#4 C:\xampp\htdocs\PW\budiluhur\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\PW\budiluhur\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\PW\budiluhur\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\PW\budiluhur\app\Controllers\Absensi.php(101): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(933): App\Controllers\Absensi->tambahDetail('A004')
+#9 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+#10 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\PW\budiluhur\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\PW\budiluhur\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\PW\budiluhur\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+ERROR - 2025-12-21 11:14:42 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_uas_klp4`.`detail_absensi`, CONSTRAINT `fk_detail_absensi_absensi` FOREIGN KEY (`id_absensi`) REFERENCES `absensi` (`id_absensi`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\PW\budiluhur\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\PW\budiluhur\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `de...', 0)
+#1 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `de...')
+#2 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `de...')
+#3 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `de...', Array, false)
+#4 C:\xampp\htdocs\PW\budiluhur\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\PW\budiluhur\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\PW\budiluhur\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\PW\budiluhur\app\Controllers\Absensi.php(101): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(933): App\Controllers\Absensi->tambahDetail('A004')
+#9 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+#10 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\PW\budiluhur\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\PW\budiluhur\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\PW\budiluhur\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+ERROR - 2025-12-21 11:19:44 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_uas_klp4`.`detail_absensi`, CONSTRAINT `fk_detail_absensi_absensi` FOREIGN KEY (`id_absensi`) REFERENCES `absensi` (`id_absensi`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\PW\budiluhur\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\PW\budiluhur\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `de...', 0)
+#1 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `de...')
+#2 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `de...')
+#3 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `de...', Array, false)
+#4 C:\xampp\htdocs\PW\budiluhur\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\PW\budiluhur\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\PW\budiluhur\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\PW\budiluhur\app\Controllers\Absensi.php(82): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(933): App\Controllers\Absensi->tambahDetail('A004')
+#9 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+#10 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\PW\budiluhur\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\PW\budiluhur\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\PW\budiluhur\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+ERROR - 2025-12-21 11:44:49 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_uas_klp4`.`detail_absensi`, CONSTRAINT `fk_detail_absensi_absensi` FOREIGN KEY (`id_absensi`) REFERENCES `absensi` (`id_absensi`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\PW\budiluhur\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\PW\budiluhur\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `de...', 0)
+#1 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `de...')
+#2 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `de...')
+#3 C:\xampp\htdocs\PW\budiluhur\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `de...', Array, false)
+#4 C:\xampp\htdocs\PW\budiluhur\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\PW\budiluhur\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\PW\budiluhur\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\PW\budiluhur\app\Controllers\Absensi.php(90): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(933): App\Controllers\Absensi->tambahDetail('A004')
+#9 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+#10 C:\xampp\htdocs\PW\budiluhur\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\PW\budiluhur\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\PW\budiluhur\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\PW\budiluhur\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-12-21 12:43:45 --> ErrorException: Undefined property: stdClass::$tanggal
+[Method: GET, Route: absensi/edit/A001]
+in APPPATH\Views\editAbsensiView.php on line 181.
+ 1 APPPATH\Views\editAbsensiView.php(181): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$tanggal', 'C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\editAbsensiView.php', 181)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\editAbsensiView.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('editAbsensiView', [], true)
+ 5 APPPATH\Controllers\Absensi.php(136): view('editAbsensiView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Absensi->edit('A001')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-12-21 12:44:59 --> ErrorException: Undefined property: stdClass::$tanggal
+[Method: GET, Route: absensi/edit/A001]
+in APPPATH\Views\editAbsensiView.php on line 181.
+ 1 APPPATH\Views\editAbsensiView.php(181): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$tanggal', 'C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\editAbsensiView.php', 181)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\editAbsensiView.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('editAbsensiView', [], true)
+ 5 APPPATH\Controllers\Absensi.php(136): view('editAbsensiView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Absensi->edit('A001')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-12-21 12:47:48 --> ErrorException: Undefined property: stdClass::$tanggal
+[Method: GET, Route: absensi/edit/A001]
+in APPPATH\Views\editAbsensiView.php on line 181.
+ 1 APPPATH\Views\editAbsensiView.php(181): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$tanggal', 'C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\editAbsensiView.php', 181)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\editAbsensiView.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('editAbsensiView', [], true)
+ 5 APPPATH\Controllers\Absensi.php(140): view('editAbsensiView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Absensi->edit('A001')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-12-21 12:54:05 --> ErrorException: Undefined property: stdClass::$tgl_absensi
+[Method: GET, Route: absensi/edit/A001]
+in APPPATH\Views\editAbsensiView.php on line 181.
+ 1 APPPATH\Views\editAbsensiView.php(181): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$tgl_absensi', 'C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\editAbsensiView.php', 181)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\editAbsensiView.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('editAbsensiView', [], true)
+ 5 APPPATH\Controllers\Absensi.php(150): view('editAbsensiView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Absensi->edit('A001')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-12-21 12:54:29 --> ErrorException: Undefined property: stdClass::$tgl_absensi
+[Method: GET, Route: absensi]
+in APPPATH\Views\absensiView.php on line 45.
+ 1 APPPATH\Views\absensiView.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$tgl_absensi', 'C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\absensiView.php', 45)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\absensiView.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('absensiView', [], true)
+ 5 APPPATH\Controllers\Absensi.php(15): view('absensiView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Absensi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-12-21 12:54:34 --> ErrorException: Undefined property: stdClass::$tgl_absensi
+[Method: GET, Route: absensi]
+in APPPATH\Views\absensiView.php on line 45.
+ 1 APPPATH\Views\absensiView.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$tgl_absensi', 'C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\absensiView.php', 45)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\absensiView.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('absensiView', [], true)
+ 5 APPPATH\Controllers\Absensi.php(15): view('absensiView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Absensi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-12-21 12:54:48 --> ErrorException: Undefined property: stdClass::$tgl_absensi
+[Method: GET, Route: absensi]
+in APPPATH\Views\absensiView.php on line 45.
+ 1 APPPATH\Views\absensiView.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$tgl_absensi', 'C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\absensiView.php', 45)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\absensiView.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('absensiView', [], true)
+ 5 APPPATH\Controllers\Absensi.php(15): view('absensiView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Absensi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-12-21 12:55:51 --> ErrorException: Attempt to read property "id_detail" on array
+[Method: GET, Route: absensi/edit/A001]
+in APPPATH\Views\editAbsensiView.php on line 252.
+ 1 APPPATH\Views\editAbsensiView.php(252): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id_detail" on array', 'C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\editAbsensiView.php', 252)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\editAbsensiView.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('editAbsensiView', [], true)
+ 5 APPPATH\Controllers\Absensi.php(150): view('editAbsensiView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Absensi->edit('A001')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-12-21 13:03:34 --> ErrorException: Attempt to read property "id_detail" on array
+[Method: GET, Route: absensi/edit/A001]
+in APPPATH\Views\editAbsensiView.php on line 252.
+ 1 APPPATH\Views\editAbsensiView.php(252): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id_detail" on array', 'C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\editAbsensiView.php', 252)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\editAbsensiView.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('editAbsensiView', [], true)
+ 5 APPPATH\Controllers\Absensi.php(150): view('editAbsensiView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Absensi->edit('A001')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-12-21 13:08:06 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: absensi/edit/A001]
+in APPPATH\Views\editAbsensiView.php on line 164.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('editAbsensiView', [], true)
+ 4 APPPATH\Controllers\Absensi.php(150): view('editAbsensiView', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Absensi->edit('A001')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-12-21 13:10:28 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: absensi/edit/A001]
+in APPPATH\Views\editAbsensiView.php on line 200.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('editAbsensiView', [], true)
+ 4 APPPATH\Controllers\Absensi.php(150): view('editAbsensiView', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Absensi->edit('A001')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-12-21 13:32:50 --> ErrorException: Attempt to read property "id_karyawan" on array
+[Method: GET, Route: absensi/edit/A001]
+in APPPATH\Views\editAbsensiView.php on line 175.
+ 1 APPPATH\Views\editAbsensiView.php(175): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id_karyawan" on array', 'C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\editAbsensiView.php', 175)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\editAbsensiView.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('editAbsensiView', [], true)
+ 5 APPPATH\Controllers\Absensi.php(189): view('editAbsensiView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Absensi->edit('A001')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-12-21 13:32:56 --> ErrorException: Attempt to read property "id_karyawan" on array
+[Method: GET, Route: absensi/edit/A001]
+in APPPATH\Views\editAbsensiView.php on line 175.
+ 1 APPPATH\Views\editAbsensiView.php(175): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id_karyawan" on array', 'C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\editAbsensiView.php', 175)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\editAbsensiView.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('editAbsensiView', [], true)
+ 5 APPPATH\Controllers\Absensi.php(189): view('editAbsensiView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Absensi->edit('A001')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-12-21 13:39:56 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: absensi/edit/A001]
+in APPPATH\Views\editAbsensiView.php on line 200.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('editAbsensiView', [], true)
+ 4 APPPATH\Controllers\Absensi.php(189): view('editAbsensiView', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Absensi->edit('A001')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-12-21 13:56:33 --> ErrorException: Attempt to read property "id_detail" on array
+[Method: GET, Route: absensi/edit/A001]
+in APPPATH\Views\editAbsensiView.php on line 242.
+ 1 APPPATH\Views\editAbsensiView.php(242): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id_detail" on array', 'C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\editAbsensiView.php', 242)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\editAbsensiView.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('editAbsensiView', [], true)
+ 5 APPPATH\Controllers\Absensi.php(189): view('editAbsensiView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Absensi->edit('A001')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-12-21 14:04:29 --> ErrorException: Attempt to read property "id_detail" on array
+[Method: GET, Route: absensi/edit/A001]
+in APPPATH\Views\editAbsensiView.php on line 241.
+ 1 APPPATH\Views\editAbsensiView.php(241): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id_detail" on array', 'C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\editAbsensiView.php', 241)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\editAbsensiView.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('editAbsensiView', [], true)
+ 5 APPPATH\Controllers\Absensi.php(189): view('editAbsensiView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Absensi->edit('A001')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

@@ -1,0 +1,28 @@
+CRITICAL - 2025-12-29 03:58:03 --> ErrorException: Undefined variable $jamMasuk
+[Method: GET, Route: absensi/edit/A004]
+in APPPATH\Views\editAbsensiView.php on line 104.
+ 1 APPPATH\Views\editAbsensiView.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jamMasuk', 'C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\editAbsensiView.php', 104)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\editAbsensiView.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('editAbsensiView', [], true)
+ 5 APPPATH\Controllers\Absensi.php(172): view('editAbsensiView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Absensi->edit('A004')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-12-29 04:11:54 --> ErrorException: Undefined variable $jamMasuk
+[Method: GET, Route: absensi/edit/A004]
+in APPPATH\Views\editAbsensiView.php on line 107.
+ 1 APPPATH\Views\editAbsensiView.php(107): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jamMasuk', 'C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\editAbsensiView.php', 107)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\editAbsensiView.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('editAbsensiView', [], true)
+ 5 APPPATH\Controllers\Absensi.php(172): view('editAbsensiView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Absensi->edit('A004')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

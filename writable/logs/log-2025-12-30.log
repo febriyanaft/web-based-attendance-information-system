@@ -1,0 +1,15 @@
+CRITICAL - 2025-12-30 02:42:03 --> ErrorException: include(footer.php): Failed to open stream: No such file or directory
+[Method: GET, Route: lapabsensi]
+in APPPATH\Views\laporan\Lap_Absensi.php on line 101.
+ 1 APPPATH\Views\laporan\Lap_Absensi.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(footer.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\laporan\\Lap_Absensi.php', 101)
+ 2 APPPATH\Views\laporan\Lap_Absensi.php(101): include()
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\laporan\\Lap_Absensi.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('laporan/lap_absensi', [], true)
+ 6 APPPATH\Controllers\LaporanController.php(85): view('laporan/lap_absensi', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanController->Lap_Absensi()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

@@ -1,0 +1,42 @@
+CRITICAL - 2026-01-05 07:36:54 --> ErrorException: Undefined property: stdClass::$alamat
+[Method: GET, Route: lapkaryawan]
+in APPPATH\Views\laporan\Lap_Karyawan.php on line 96.
+ 1 APPPATH\Views\laporan\Lap_Karyawan.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$alamat', 'C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\laporan\\Lap_Karyawan.php', 96)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\laporan\\Lap_Karyawan.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('laporan/lap_karyawan', [], true)
+ 5 APPPATH\Controllers\LaporanController.php(21): view('laporan/lap_karyawan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanController->Lap_Karyawan()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-01-05 07:39:31 --> ErrorException: Undefined property: stdClass::$tgl_absensi
+[Method: GET, Route: lapkaryawan]
+in APPPATH\Views\laporan\Lap_Karyawan.php on line 62.
+ 1 APPPATH\Views\laporan\Lap_Karyawan.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$tgl_absensi', 'C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\laporan\\Lap_Karyawan.php', 62)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\laporan\\Lap_Karyawan.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('laporan/lap_karyawan', [], true)
+ 5 APPPATH\Controllers\LaporanController.php(24): view('laporan/lap_karyawan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanController->Lap_Karyawan()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-01-05 07:39:42 --> ErrorException: Undefined property: stdClass::$tgl_absensi
+[Method: GET, Route: lapkaryawan]
+in APPPATH\Views\laporan\Lap_Karyawan.php on line 62.
+ 1 APPPATH\Views\laporan\Lap_Karyawan.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$tgl_absensi', 'C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\laporan\\Lap_Karyawan.php', 62)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PW\\budiluhur\\app\\Views\\laporan\\Lap_Karyawan.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('laporan/lap_karyawan', [], true)
+ 5 APPPATH\Controllers\LaporanController.php(24): view('laporan/lap_karyawan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanController->Lap_Karyawan()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
